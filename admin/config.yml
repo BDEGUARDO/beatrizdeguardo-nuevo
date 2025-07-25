@@ -1,0 +1,17 @@
+site_url: https://beatrizdeguardo.com
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "cuadros"
+    label: "Cuadros"
+    folder: "cuadros"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Descripción", name: "description", widget: "text"}
+      - {label: "Imagen", name: "image", widget: "image"}
