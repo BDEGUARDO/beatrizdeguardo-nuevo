@@ -8,9 +8,11 @@
   </head>
   <body>
     <script>
-      window.addEventListener("DOMContentLoaded", function () {
+      if (typeof CMS !== "undefined") {
         CMS.init();
-      });
+      } else {
+        console.error("Netlify CMS no se ha cargado correctamente.");
+      }
     </script>
   </body>
 </html>
