@@ -11,7 +11,8 @@ collections:
     folder: "cuadros"
     create: true
     slug: "{{slug}}"
-    fields:
-      - {label: "Título", name: "title", widget: "string"}
-      - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "Imagen", name: "image", widget: "image"}
+   fields:
+  - {label: "Título", name: "title", widget: "string"}
+  - {label: "Descripción", name: "description", widget: "text"}
+  - {label: "Imagen", name: "image", widget: "image"}
+
