@@ -1,0 +1,28 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "figurativo"
+    label: "Figurativo"
+    folder: "figurativo"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Imagen", name: "image", widget: "image" }
+
+  - name: "abstracto"
+    label: "Abstracto"
+    folder: "abstracto"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Imagen", name: "image", widget: "image" }
