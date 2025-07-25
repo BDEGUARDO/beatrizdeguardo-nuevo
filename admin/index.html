@@ -1,17 +1,26 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <title>Beatriz CMS</title>
     <script src="https://unpkg.com/netlify-cms@2.10.0/dist/netlify-cms.js"></script>
+    <style>
+      #nc-root {
+        font-family: sans-serif;
+        color: white;
+        margin-top: 2em;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
+    <div id="nc-root">Cargando panel...</div>
     <script>
       window.addEventListener('load', function () {
         if (typeof CMS !== "undefined") {
           CMS.init();
         } else {
+          document.getElementById("nc-root").innerText = "Error: CMS no se cargó.";
           console.error("Netlify CMS no se ha cargado correctamente.");
         }
       });
