@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: BDEGUARDO/beatrizdeguardo-nuevo
   branch: main
+  auth_type: token
 
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
