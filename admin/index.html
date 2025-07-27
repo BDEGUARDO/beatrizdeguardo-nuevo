@@ -1,1 +1,16 @@
-<!-- CMS loader -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Panel CMS</title>
+    <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
+  </head>
+  <body>
+    <script>
+      if (typeof CMS === "undefined") {
+        document.body.innerHTML =
+          "<h2 style='color:red;text-align:center;'>Error al cargar Netlify CMS. Revisa el script o tu conexión.</h2>";
+      }
+    </script>
+  </body>
+</html>
